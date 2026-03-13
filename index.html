@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон BarysAuto</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+.first-block>.container{
+    display: flex;
+}
+.first-block>.container>.left-col,.right-col{
+    flex: 1;
+}
+.first-block>.container>.left-col{
+    font-size: 16px;
+    margin-top: 10%;
+    margin-left: 5%
+}
+.first-block>.container>.left-col>a{
+    color: red;
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+
+
+
+    <header>
+        <nav class="menu">
+        <a href="#" class="logo">
+            <img src="img/logo2.png" alt="">
+        </a>
+    <a href="catalog.html">Каталог</a>
+    <a href="favorites.html">Улюблене</a>
+    <button onclick="window.location.href='account.html';">Особистий акаунт</button>
+    </nav>
+</header>
+
+
+
+    <main>
+        <div class="first-block">
+            <div class="container">
+                <div class="left-col">
+                    <h1>Продайте свій автомобіль швидко, безпечно та вигідно.</h1>
+                        <p>Авторинок BarysAuto відкритий для всіх, хто бажає продати автомобіль з пробігом.</p>
+                        <a href="catalog.html">Переглянути каталог</a>
+                </div>
+                <div class="right-col">
+                        <img src="img/main-car.png" alt="Автомобіль">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="contacs">
+            <ul>
+                <li><strong>ГРАФІК РОБОТИ:</strong> ПН-ПТ з 9:30 до 22:00 / </li>
+                <li>СБ-ВС з 10:00 до 20:00 - обробка замовлень, консультація</li>
+                <li><strong>КОНТАКТИ:</strong> +38(012)-345-67-89</li>
+                <li><strong>АДРЕСА ВИРОБНИЦТВА:</strong> м.Київ вул. Вулиця 01</li>
+            </ul>
+        </div>       
+        <div class="map">
+    <h3>Ми на карті:</h3>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6641887013234!2d30.5212513!3d50.4501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI3JzAwLjQiTiAzMMKwMzEnMTYuNSJF!5e0!3m2!1suk!2sua!4v1620000000000" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</div>
+</footer>
+
+
+</body>
+</html>

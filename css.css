@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+main{
+    margin: 2%; 
+}
+footer{
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.logo>img{
+    max-width: 160px;
+    height: auto;
+}
+.menu{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%
+}
+.menu>a{
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-right: 2%;
+    
+}
+.menu>a:hover{
+    animation: menu 0.5s ease forwards ;
+}
+.menu>button{
+    background: white;
+    margin-left: auto;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+    font-size: 16px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+.contacs{
+    flex: 1;
+    padding-left: 5%
+}
+.contacs>ul{
+    list-style-type: none;
+    text-align: left;
+}
+.map{
+    flex: 1;
+    padding-right: 5%
+}
+.map>iframe{
+    border: 2px solid #505050;
+    border-radius: 10px;
+}
+@keyframes menu {
+    0% {
+        color: white;
+        font-size: 16px;
+    }
+    100% {
+        color: black;
+        font-size: 18px;
+    }
+}
