@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+    </style>
 </head>
 <body>
-    <header>
+    <header id="to-top">
         <nav class="menu">
-        <a href="index.html" class="logo">
+        <a href="index.html" id="logo">
             <img src="img/logo2.png" alt="">
         </a>
     <a href="#">Каталог</a>
@@ -19,7 +21,8 @@
 </header>
 
 <main>
-    <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 30px;">
+    <div class="container">
+            <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 30px;">
     <caption style="font-weight: bold; font-size: 20px; margin-bottom: 10px;">Наші пропозиції</caption>
     <thead style="background-color: #ff0000; color: white;">
         <tr>
@@ -72,7 +75,7 @@
         <td colspan="2" align="center" style="color: red; font-weight: bold;">Від 25 000 $</td>
     </tr>
 </table>
-
+    </div>
 </main>
 
 
@@ -94,5 +97,8 @@
     </iframe>
 </div>
 </footer>
+  <a href="#to-top">
+        <div class="move-top">Угору</div>
+    </a>
 </body>
 </html>

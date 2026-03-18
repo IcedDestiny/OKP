@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Улюблене</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+        .first-block>.container{
+    display: flex;
+}
+.first-block>.container>.left-col,.right-col{
+    flex: 1;
+    font-size: 16px;
+}
+    </style>
 </head>
 <body>
-    <header>
+    <header id="to-top">
         <nav class="menu">
-        <a href="index.html" class="logo">
+        <a href="index.html" id="logo">
             <img src="img/logo2.png" alt="">
         </a>
     <a href="catalog.html">Каталог</a>
@@ -18,6 +27,33 @@
     </nav>
 </header>
 
+
+    <main>
+        <div class="first-block">
+                    <dl>
+                        <dt>Що це за сторінка і навіщо вона потрібна?</dt>
+                        <dd>Ця сторінка показує ваші улюблені товари та ті які ви додали до списку бажаних</dd>
+                    </dl>
+            <div class="container">
+                <div class="left-col">
+                    <p>Улюблене</p>
+                    <ul>
+                        <li>BMW M4 Competition</li>
+                        <li>Toyota Land Cruiser 300</li>
+                        <li>Porsche 911 Turbo S</li>
+                    </ul>
+                </div>
+                <div class="right-col">
+                    <p>Бажане</p>
+                    <ol>
+                        <li>Audi RS6 Avant</li>
+                        <li>Honda Civic Type R</li>
+                        <li>Mercedes-Benz G 63 AMG</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="contacs">
@@ -37,5 +73,8 @@
     </iframe>
 </div>
 </footer>
+  <a href="#to-top">
+        <div class="move-top">Угору</div>
+    </a>
 </body>
 </html>

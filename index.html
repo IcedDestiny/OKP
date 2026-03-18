@@ -6,30 +6,31 @@
     <title>Автосалон BarysAuto</title>
     <link rel="stylesheet" href="css.css">
     <style>
-.first-block>.container{
+.container{
     display: flex;
 }
-.first-block>.container>.left-col,.right-col{
+.left-col,.right-col{
     flex: 1;
 }
-.first-block>.container>.left-col{
+.left-col{
     font-size: 16px;
     margin-top: 10%;
     margin-left: 5%
 }
-.first-block>.container>.left-col>a{
+.left-col a{
     color: red;
     text-decoration: underline;
+}
+.right-col{
+        float: right;
 }
     </style>
 </head>
 <body>
 
-
-
-    <header>
+    <header id="to-top">
         <nav class="menu">
-        <a href="#" class="logo">
+        <a href="#" id="logo">
             <img src="img/logo2.png" alt="">
         </a>
     <a href="catalog.html">Каталог</a>
@@ -44,9 +45,9 @@
         <div class="first-block">
             <div class="container">
                 <div class="left-col">
-                    <h1>Продайте свій автомобіль швидко, безпечно та вигідно.</h1>
-                        <p>Авторинок BarysAuto відкритий для всіх, хто бажає продати автомобіль з пробігом.</p>
-                        <a href="catalog.html">Переглянути каталог</a>
+                    <h1>Продайте свій автомобіль <span class="highlight">швидко</span>, безпечно та вигідно.</h1>
+                    <p>Авторинок <span class="highlight">BarysAuto</span> відкритий для всіх, хто бажає продати автомобіль з пробігом.</p>
+                    <a href="catalog.html">Переглянути каталог</a>
                 </div>
                 <div class="right-col">
                         <img src="img/main-car.png" alt="Автомобіль">
@@ -58,7 +59,7 @@
 
     </main>
     <footer>
-        <div class="contacs">
+        <div class="contacs" id="contacs">
             <ul>
                 <li><strong>ГРАФІК РОБОТИ:</strong> ПН-ПТ з 9:30 до 22:00 / </li>
                 <li>СБ-ВС з 10:00 до 20:00 - обробка замовлень, консультація</li>
@@ -76,6 +77,8 @@
 </div>
 </footer>
 
-
+  <a href="#to-top">
+        <div class="move-top">Угору</div>
+    </a>
 </body>
 </html>
